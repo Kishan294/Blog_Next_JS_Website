@@ -1,27 +1,19 @@
-import React from "react";
-
 const Hero = () => {
   return (
-    <div>
-      {/* Kajal Ko pasand nhi hai baad me dekheng */}
-      {/* <video
-        className="max-h-[90vh] relative w-full object-cover"
-        loop
-        autoPlay
-      >
-        <source src="./video_hero.mp4" type="video/mp4" />
-      </video> */}
-      <div className="absolute top-0 flex flex-col items-center justify-center left-0 right-0 w-full h-full bg-[url('/bg.png')] bg-cover ">
-        <h1 className="text-gray-300 font-black text-center  text-[100px] leading-[1] ">
-          Welcome <br /> world of{" "}
-          <span className="gradient_text text-[110px] ">Blog</span>
-          <br /> writing
-        </h1>
-        <p className="text-gray-400 mt-10 w-[40vw] text-center mx-auto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum magni
-          eaque molestiae inventore dolores sunt.
-        </p>
-      </div>
+    <div className="flex flex-col items-center justify-center  min-h-[90vh] w-full bg-[url('/bg.png')] bg-cover bg-center px-5 ">
+      <h1 className="text-gray-300 font-black text-center lg:text-[100px] leading-[1] md:text-[90px] text-[60px] ">
+        Welcome world <br /> of{" "}
+        <span
+          className={`gradient_text font-["Dancing_Script"] lg:text-[110px] md:text-[100px] text-[70px]`}
+        >
+          Blog
+        </span>{" "}
+        writing
+      </h1>
+      <p className="text-gray-400 mt-10 lg:w-[40vw] w-full text-center mx-auto md:w-[80vw]">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum magni
+        eaque molestiae inventore dolores sunt.
+      </p>
     </div>
   );
 };
